@@ -86,7 +86,7 @@ def main() -> None:
         if not os.path.exists(csv_dir):
             os.makedirs(csv_dir)
 
-        movies.to_csv(path_to_csv, index=False)
+        movies.to_csv(path_to_csv,sep='|',index=False)
 
     else:
         print("Error: Could not connect to database.")
